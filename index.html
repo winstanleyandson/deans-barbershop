@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Barbers in Dingle L8 | Dean's Barbershop, Park Road, Liverpool</title>
+<meta name="description" content="Dean's Barbershop, 296 Park Road, Dingle, Liverpool L8 4UE. Traditional gentlemen's barber since 2008: classic cuts, skin fades, beard trims and cut-throat shaves. Booking preferred; walk in if a chair is free.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500;600&display=swap">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarberShop",
+  "name": "Dean's Barbershop",
+  "url": "https://deansbarbershop.co.uk/",
+  "telephone": "+447488254850",
+  "foundingDate": "2008",
+  "founder": {"@type": "Person", "name": "Dean Winstanley"},
+  "address": {"@type": "PostalAddress", "streetAddress": "296 Park Road", "addressLocality": "Liverpool", "addressRegion": "Merseyside", "postalCode": "L8 4UE", "addressCountry": "GB"},
+  "areaServed": ["Dingle", "Toxteth", "Liverpool L8"],
+  "sameAs": ["https://www.instagram.com/deansbarbers", "https://www.facebook.com/deansbarbersdingle", "https://deans-barbershop.nearcut.com/"]
+}
+</script>
+<style>
+/* Layout: one column on the phone, a 1100px measure on desktop; dark bottle-green ground, cream chapters, gold hairlines. */
+:root{
+  --green-900:#0B2A20; --green-700:#0F3B2C; --green-600:#14503f;
+  --gold:#C9A961; --gold-deep:#B8975A; --gold-ink:#8A6D2F;
+  --cream:#F5F0E3; --cream-2:#FBF8F0; --white:#FFFFFF; --ink:#16201A; --muted:#5d6a62;
+  --hair:rgba(201,169,97,.55);
+  --display:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --mark:"Cinzel",Georgia,serif;
+  --body:"Jost","Helvetica Neue",Arial,sans-serif;
+  --gutter:max(20px,env(safe-area-inset-left,0px));
+  --gutter-r:max(20px,env(safe-area-inset-right,0px));
+  --measure:1100px;
+  --bar-h:64px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--green-700);color:var(--cream);font-family:var(--body);font-size:17px;line-height:1.6;padding-bottom:calc(var(--bar-h) + env(safe-area-inset-bottom,0px))}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.08;margin:0;text-wrap:balance}
+p{margin:0}
+.wrap{max-width:var(--measure);margin-inline:auto;padding-left:var(--gutter);padding-right:var(--gutter-r)}
+.eyebrow{font-family:var(--mark);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+.cream .eyebrow{color:var(--gold-ink)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:12px 26px;border:1px solid var(--gold);border-radius:3px;font-family:var(--mark);font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;transition:background .2s,color .2s,transform .2s}
+.btn:active{transform:translateY(1px)}
+.btn-gold{background:var(--gold);color:var(--green-900);border-color:var(--gold)}
+.btn-gold:hover{background:#d6b86f}
+.btn-line{background:transparent;color:var(--cream)}
+.btn-line:hover{background:rgba(201,169,97,.12)}
+.cream .btn-line{color:var(--green-700);border-color:var(--green-700)}
+.cream .btn-line:hover{background:rgba(15,59,44,.07)}
+.btn svg{width:18px;height:18px;flex:none}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+/* header */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(11,42,32,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--hair)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand svg{width:40px;height:40px}
+.brand b{font-family:var(--mark);font-weight:600;font-size:.95rem;letter-spacing:.14em;text-transform:uppercase;color:var(--cream);white-space:nowrap}
+.brand small{display:block;font-family:var(--body);font-weight:400;font-size:.62rem;letter-spacing:.2em;color:var(--gold);margin-top:2px}
+.menu{display:none;gap:28px;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase}
+.menu a{text-decoration:none;color:var(--cream);opacity:.85}
+.menu a:hover{opacity:1;color:var(--gold)}
+.nav .btn{min-height:44px;padding:8px 16px;font-size:.7rem}
+
+/* hero */
+.hero{position:relative;background:var(--green-900);overflow:hidden}
+.hero-img{position:absolute;inset:0;background:url(images/hero-m.jpg) center/cover no-repeat}
+.hero-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,42,32,.55) 0%,rgba(11,42,32,.78) 55%,var(--green-900) 100%)}
+.hero .wrap{position:relative;padding-block:72px 56px;display:grid;gap:22px}
+.crest{width:96px;height:96px}
+.hero h1{font-size:clamp(2.6rem,10vw,5.2rem);font-weight:500;color:var(--white);letter-spacing:.01em}
+.hero h1 em{font-style:italic;color:var(--gold);font-weight:500}
+.lede{font-size:1.1rem;max-width:34ch;color:rgba(245,240,227,.9)}
+.status{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.9rem;color:rgba(245,240,227,.85)}
+.status .dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--gold);margin-right:8px;vertical-align:middle}
+.status .open .dot{background:#6fcf97}
+.ctas{display:grid;gap:12px}
+.ctas .btn{width:100%}
+.hero-foot{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.82rem;letter-spacing:.06em;color:var(--gold)}
+
+/* trust strip */
+.trust{background:var(--green-900);border-top:1px solid var(--hair);border-bottom:1px solid var(--hair)}
+.trust .wrap{display:grid;grid-template-columns:repeat(2,1fr);gap:18px 12px;padding-block:22px;text-align:center}
+.trust b{display:block;font-family:var(--display);font-size:1.9rem;font-weight:600;color:var(--white);line-height:1}
+.trust span{display:block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-top:6px}
+
+/* sections */
+section{padding-block:64px}
+.cream{background:var(--cream);color:var(--ink)}
+.cream h2{color:var(--green-700)}
+h2{font-size:clamp(2rem,7vw,3.2rem);font-weight:500}
+.sec-head{display:grid;gap:8px;margin-bottom:28px}
+.sec-head p{color:var(--muted);max-width:48ch}
+.dark .sec-head p{color:rgba(245,240,227,.78)}
+
+/* prices */
+.menu-grid{display:grid;gap:36px}
+.menu-block h3{font-size:1.5rem;color:var(--green-700);margin-bottom:12px;display:flex;align-items:baseline;gap:14px}
+.menu-block h3::after{content:"";flex:1;height:1px;background:rgba(138,109,47,.45)}
+.item{display:grid;grid-template-columns:1fr auto;gap:4px 14px;padding:12px 0;border-bottom:1px dotted rgba(22,32,26,.28)}
+.item:last-child{border-bottom:0}
+.item .n{font-weight:500;font-size:1.05rem}
+.item .d{grid-column:1;font-size:.9rem;color:var(--muted)}
+.item .p{grid-column:2;font-family:var(--display);font-size:1.5rem;font-weight:600;color:var(--green-700);font-variant-numeric:tabular-nums;grid-row:1/3;align-self:center}
+.note{font-size:.88rem;color:var(--muted);margin-top:22px}
+.draft{display:inline-block;background:#fff3cd;color:#6b4e00;border:1px solid #e6c36a;padding:4px 10px;border-radius:3px;font-size:.78rem;letter-spacing:.06em;margin-bottom:18px}
+
+/* story */
+.story{display:grid;gap:28px}
+.story figure{margin:0;position:relative}
+.story figure img{aspect-ratio:4/3;object-fit:cover;width:100%;border:1px solid var(--hair);box-shadow:0 0 0 8px var(--green-900)}
+.story figure::after{content:"";position:absolute;inset:0;background:rgba(11,42,32,.22);pointer-events:none}
+.story .txt{display:grid;gap:14px;font-size:1.05rem;color:rgba(245,240,227,.9)}
+.story .txt p.big{font-family:var(--display);font-size:1.55rem;line-height:1.25;color:var(--white)}
+.signoff{font-family:var(--display);font-style:italic;font-size:1.3rem;color:var(--gold)}
+
+/* gallery */
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.gallery img{aspect-ratio:1;object-fit:cover;width:100%;filter:saturate(.85)}
+.gallery figure{margin:0;position:relative;overflow:hidden}
+.gallery figure::after{content:"";position:absolute;inset:0;background:rgba(11,42,32,.18);mix-blend-mode:multiply}
+.ig{margin-top:22px;display:flex;justify-content:center}
+
+/* reviews */
+.stars{color:var(--gold);letter-spacing:.1em;font-size:1.1rem}
+.reviews{display:grid;gap:14px}
+.rev{border:1px solid rgba(138,109,47,.4);padding:22px;background:var(--cream-2);display:grid;gap:10px}
+.rev q{font-family:var(--display);font-size:1.25rem;line-height:1.35;quotes:"\201C" "\201D"}
+.rev q::before{color:var(--gold-ink)}
+.rev cite{font-style:normal;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-ink)}
+.placeholder{opacity:.72}
+
+/* visit */
+.visit{display:grid;gap:36px}
+.hours{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.hours td{padding:10px 0;border-bottom:1px solid var(--hair);font-size:1rem}
+.hours td:last-child{text-align:right;color:var(--white)}
+.hours tr.today td{color:var(--gold);font-weight:500}
+.addr{display:grid;gap:14px;font-size:1.05rem}
+.addr address{font-style:normal;font-family:var(--display);font-size:1.5rem;line-height:1.3;color:var(--white)}
+.addr .btn{width:100%}
+.howto{font-size:.95rem;color:rgba(245,240,227,.8)}
+
+/* final CTA */
+.cta-band{background:var(--gold);color:var(--green-900);text-align:center}
+.cta-band h2{color:var(--green-900)}
+.cta-band p{max-width:40ch;margin:12px auto 26px;font-size:1.05rem}
+.cta-band .btn-line{color:var(--green-900);border-color:var(--green-900)}
+.cta-band .btn-gold{background:var(--green-900);color:var(--gold);border-color:var(--green-900)}
+.cta-band .ctas{max-width:420px;margin-inline:auto}
+
+footer{background:var(--green-900);border-top:1px solid var(--hair);font-size:.85rem;color:rgba(245,240,227,.75)}
+footer .wrap{padding-block:36px;display:grid;gap:18px}
+footer .brand b{font-size:.85rem}
+footer .links{display:flex;flex-wrap:wrap;gap:8px 20px}
+footer a{color:var(--gold);text-decoration:none}
+footer .fine{font-size:.75rem;color:rgba(245,240,227,.5)}
+
+/* sticky mobile bar */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1fr 1.3fr 1fr;gap:1px;background:var(--hair);border-top:1px solid var(--hair);padding-bottom:env(safe-area-inset-bottom,0px);padding-left:env(safe-area-inset-left,0px);padding-right:env(safe-area-inset-right,0px)}
+.bar a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:var(--bar-h);background:var(--green-900);color:var(--cream);text-decoration:none;font-family:var(--mark);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase}
+.bar a.book{background:var(--gold);color:var(--green-900);font-weight:600}
+.bar svg{width:18px;height:18px}
+
+/* desktop */
+@media (min-width:760px){
+  body{padding-bottom:0}
+  .bar{display:none}
+  .menu{display:flex}
+  .hero-img{background-image:url(images/hero.jpg)}
+  .hero .wrap{padding-block:110px 90px;max-width:var(--measure)}
+  .hero h1{max-width:12ch}
+  .ctas{grid-template-columns:auto auto;justify-content:start}
+  .ctas .btn{width:auto;min-width:220px}
+  .trust .wrap{grid-template-columns:repeat(4,1fr)}
+  section{padding-block:96px}
+  .menu-grid{grid-template-columns:1fr 1fr;gap:28px 64px}
+  .story{grid-template-columns:1fr 1fr;align-items:center;gap:64px}
+  .gallery{grid-template-columns:repeat(3,1fr);gap:12px}
+  .reviews{grid-template-columns:repeat(3,1fr)}
+  .visit{grid-template-columns:1fr 1fr;gap:64px}
+  .addr .btn{width:auto}
+  footer .wrap{grid-template-columns:auto 1fr auto;align-items:center}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Dean's Barbershop home">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="none" stroke="#C9A961" stroke-width="1.5"/><circle cx="24" cy="24" r="18" fill="none" stroke="#C9A961" stroke-width=".8"/><text x="24" y="31" text-anchor="middle" font-family="Cinzel,Georgia,serif" font-size="20" font-weight="600" fill="#C9A961">D</text></svg>
+      <b>Dean's Barbershop<small>Park Road · Est. 2008</small></b>
+    </a>
+    <nav class="menu" aria-label="Page sections">
+      <a href="#prices">Prices</a><a href="#shop">The shop</a><a href="#reviews">Reviews</a><a href="#visit">Find us</a>
+    </nav>
+    <a class="btn btn-gold" href="https://deans-barbershop.nearcut.com/" target="_blank" rel="noopener">Book</a>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero" aria-labelledby="h1">
+  <div class="hero-img" role="img" aria-label="Leather barber chair in a traditional barbershop"></div>
+  <div class="wrap">
+    <svg class="crest" viewBox="0 0 96 96" aria-hidden="true">
+      <circle cx="48" cy="48" r="45" fill="none" stroke="#C9A961" stroke-width="1.5"/>
+      <circle cx="48" cy="48" r="39" fill="none" stroke="#C9A961" stroke-width=".8"/>
+      <path d="M30 62 L66 34 M30 34 L66 62" stroke="#C9A961" stroke-width="1.6" stroke-linecap="round"/>
+      <circle cx="30" cy="34" r="4" fill="none" stroke="#C9A961" stroke-width="1.4"/>
+      <circle cx="30" cy="62" r="4" fill="none" stroke="#C9A961" stroke-width="1.4"/>
+      <text x="48" y="22" text-anchor="middle" font-family="Cinzel,Georgia,serif" font-size="7" letter-spacing="2" fill="#C9A961">EST</text>
+      <text x="48" y="82" text-anchor="middle" font-family="Cinzel,Georgia,serif" font-size="7" letter-spacing="2" fill="#C9A961">2008</text>
+    </svg>
+    <p class="eyebrow">Gentlemen's barber · Dingle, Liverpool L8</p>
+    <h1 id="h1">A proper cut, <em>done properly.</em></h1>
+    <p class="lede">Classic cuts, sharp skin fades, tidy beards and hot-towel cut-throat shaves on Park Road since 2008.</p>
+    <p class="status"><span id="open-status" class="open"><span class="dot"></span>Opening hours below</span><span>Booking preferred · walk in if a chair's free</span></p>
+    <div class="ctas">
+      <a class="btn btn-gold" href="https://deans-barbershop.nearcut.com/" target="_blank" rel="noopener">Book online</a>
+      <a class="btn btn-line" href="tel:+447488254850"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.8.3 1.7.5 2.6.7a2 2 0 0 1 1.7 2z"/></svg>Call 07488 254850</a>
+    </div>
+    <p class="hero-foot"><span>296 Park Road, L8 4UE</span><span>Book ahead for a guaranteed time</span></p>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="wrap">
+    <div><b>2008</b><span>On Park Road since</span></div>
+    <div><b>1998</b><span>Cutting hair since</span></div>
+    <div><b>4.8<span style="font-size:1rem;display:inline;letter-spacing:0;text-transform:none">/5</span></b><span>Customer rating*</span></div>
+    <div><b>Book</b><span>Walk in if a chair's free</span></div>
+  </div>
+</div>
+
+<section id="prices" class="cream" aria-labelledby="h-prices">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">The menu</p>
+      <h2 id="h-prices">Cuts, beards &amp; shaves</h2>
+      <p>Straightforward prices, no packages, no upselling. Pay by cash or card.</p>
+    </div>
+    <span class="draft">Draft prices · Dean to confirm before launch</span>
+    <div class="menu-grid">
+      <div class="menu-block">
+        <h3>Cuts</h3>
+        <div class="item"><span class="n">Gentleman's cut</span><span class="p">£15</span><span class="d">Scissor or clipper cut, washed and finished. About 30 minutes.</span></div>
+        <div class="item"><span class="n">Skin fade</span><span class="p">£18</span><span class="d">Blended to the skin, lined up and finished with a razor.</span></div>
+        <div class="item"><span class="n">Boys' cut (under 12)</span><span class="p">£12</span><span class="d">Patient, quick and tidy.</span></div>
+        <div class="item"><span class="n">Senior gentleman's cut</span><span class="p">£12</span><span class="d">For our regulars over 65.</span></div>
+      </div>
+      <div class="menu-block">
+        <h3>Beards &amp; shaves</h3>
+        <div class="item"><span class="n">Beard trim &amp; shape</span><span class="p">£10</span><span class="d">Shaped with clippers and scissors, edges razored clean.</span></div>
+        <div class="item"><span class="n">Hot-towel cut-throat shave</span><span class="p">£18</span><span class="d">Hot towels, lather, open razor and a cold-towel finish. The traditional way.</span></div>
+        <h3 style="margin-top:28px">Together</h3>
+        <div class="item"><span class="n">Cut &amp; beard</span><span class="p">£24</span><span class="d">The full tidy-up.</span></div>
+        <div class="item"><span class="n">Skin fade &amp; beard</span><span class="p">£27</span><span class="d">Fade, beard and razor lines.</span></div>
+      </div>
+    </div>
+    <p class="note">Official Uppercut Deluxe stockist. Products available in the shop.</p>
+  </div>
+</section>
+
+<section id="shop" class="dark" aria-labelledby="h-shop">
+  <div class="wrap story">
+    <figure><img src="images/shop.jpg" alt="Chrome and leather barber chairs in the shop" loading="lazy" width="1200" height="900"></figure>
+    <div class="txt">
+      <p class="eyebrow">The shop</p>
+      <h2 id="h-shop">One barber. One chair. Since 1998.</h2>
+      <p class="big">Dean started cutting hair in 1998 and spent ten years at Traditions in Mossley Hill before opening his own shop on Park Road in 2008.</p>
+      <p>It's a proper old-school barber's: you sit down, you get a good cut, you have a chat if you want one, and you leave looking sharp. No gimmicks, no music you can't talk over, and no pressure to buy anything.</p>
+      <p>Classic cuts and cut-throat shaves are the speciality, but a modern skin fade gets the same care.</p>
+      <p class="signoff">Dean</p>
+    </div>
+  </div>
+</section>
+
+<section class="cream" aria-labelledby="h-gallery">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">The work</p>
+      <h2 id="h-gallery">Recent cuts</h2>
+    </div>
+    <div class="gallery">
+      <figure><img src="images/g1.jpg" alt="Clipper work on a short back and sides" loading="lazy" width="800" height="800"></figure>
+      <figure><img src="images/g2.jpg" alt="Skin fade being lined up with an open razor" loading="lazy" width="800" height="800"></figure>
+      <figure><img src="images/g3.jpg" alt="Beard being trimmed with scissors" loading="lazy" width="800" height="800"></figure>
+      <figure><img src="images/g4.jpg" alt="Classic barber chair" loading="lazy" width="800" height="800"></figure>
+      <figure><img src="images/g5.jpg" alt="Inside the barbershop" loading="lazy" width="800" height="800"></figure>
+      <figure><img src="images/g6.jpg" alt="Finishing a cut" loading="lazy" width="800" height="800"></figure>
+    </div>
+    <div class="ig"><a class="btn btn-line" href="https://www.instagram.com/deansbarbers" target="_blank" rel="noopener">More on Instagram @deansbarbers</a></div>
+  </div>
+</section>
+
+<section id="reviews" class="cream" style="padding-top:0" aria-labelledby="h-reviews">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">What customers say</p>
+      <h2 id="h-reviews">Rated 4.8 out of 5</h2>
+      <p><span class="stars" aria-hidden="true">★★★★★</span> From 177 customer reviews*</p>
+    </div>
+    <div class="reviews">
+      <div class="rev placeholder"><q>Review text to be added from Dean's Google or Nearcut page.</q><cite>Customer name</cite></div>
+      <div class="rev placeholder"><q>Review text to be added from Dean's Google or Nearcut page.</q><cite>Customer name</cite></div>
+      <div class="rev placeholder"><q>Review text to be added from Dean's Google or Nearcut page.</q><cite>Customer name</cite></div>
+    </div>
+    <p class="note">*Rating and review count as shown on public listings in October 2026. To be confirmed against Google before launch.</p>
+  </div>
+</section>
+
+<section id="visit" class="dark" aria-labelledby="h-visit">
+  <div class="wrap visit">
+    <div class="addr">
+      <p class="eyebrow">Find us</p>
+      <h2 id="h-visit">Park Road, Dingle</h2>
+      <address>296 Park Road<br>Dingle, Liverpool<br>L8 4UE</address>
+      <p class="howto">On Park Road near the Dingle end, a short walk from Park Road's shops. Street parking nearby. Buses along Park Road stop outside.</p>
+      <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&query=Deans+Barber+Shop+296+Park+Road+Liverpool+L8+4UE" target="_blank" rel="noopener">Get directions</a>
+      <a class="btn btn-line" href="https://wa.me/447488254850?text=Hi%20Dean%2C%20can%20I%20book%20a%20cut%3F"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.8-1.4.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.1.6 2.8.5a2.4 2.4 0 0 0 1.6-1.1c.2-.6.2-1 .1-1.1l-.6-.3z"/></svg>WhatsApp us</a>
+    </div>
+    <div>
+      <p class="eyebrow">Opening hours</p>
+      <table class="hours" id="hours">
+        <tbody>
+          <tr data-d="1"><td>Monday</td><td>9:30am – 5:00pm</td></tr>
+          <tr data-d="2"><td>Tuesday</td><td>9:30am – 5:00pm</td></tr>
+          <tr data-d="3"><td>Wednesday</td><td>Closed</td></tr>
+          <tr data-d="4"><td>Thursday</td><td>10:00am – 6:00pm</td></tr>
+          <tr data-d="5"><td>Friday</td><td>9:30am – 6:00pm</td></tr>
+          <tr data-d="6"><td>Saturday</td><td>7:00am – 1:00pm</td></tr>
+          <tr data-d="0"><td>Sunday</td><td>Closed</td></tr>
+        </tbody>
+      </table>
+      <p class="howto" style="margin-top:14px">Booking is best and holds your slot. If a chair's free when you walk in, you're welcome.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band" aria-labelledby="h-cta">
+  <div class="wrap">
+    <p class="eyebrow" style="color:var(--green-900)">Ready when you are</p>
+    <h2 id="h-cta">Book your chair</h2>
+    <p>Pick a time online or give us a ring. If a chair's free when you pass, walk in.</p>
+    <div class="ctas">
+      <a class="btn btn-gold" href="https://deans-barbershop.nearcut.com/" target="_blank" rel="noopener">Book online</a>
+      <a class="btn btn-line" href="tel:+447488254850">Call 07488 254850</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#top"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="none" stroke="#C9A961" stroke-width="1.5"/><text x="24" y="31" text-anchor="middle" font-family="Cinzel,Georgia,serif" font-size="20" font-weight="600" fill="#C9A961">D</text></svg><b>Dean's Barbershop<small>296 Park Road, Liverpool L8 4UE</small></b></a>
+    <div class="links">
+      <a href="tel:+447488254850">07488 254850</a>
+      <a href="https://www.instagram.com/deansbarbers" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/deansbarbersdingle" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://deans-barbershop.nearcut.com/" target="_blank" rel="noopener">Book online</a>
+    </div>
+    <p class="fine">© <span id="yr">2026</span> Dean's Barbershop, Park Road, Dingle, Liverpool.</p>
+  </div>
+</footer>
+
+<nav class="bar" aria-label="Quick actions">
+  <a href="tel:+447488254850"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.8.3 1.7.5 2.6.7a2 2 0 0 1 1.7 2z"/></svg>Call</a>
+  <a class="book" href="https://deans-barbershop.nearcut.com/" target="_blank" rel="noopener">Book online</a>
+  <a href="https://wa.me/447488254850?text=Hi%20Dean%2C%20can%20I%20book%20a%20cut%3F"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>WhatsApp</a>
+</nav>
+
+<script>
+(function(){
+  // Hours in 24h, Europe/London. Edit here and in the table together.
+  var H={1:[930,1700],2:[930,1700],3:null,4:[1000,1800],5:[930,1800],6:[700,1300],0:null};
+  function fmt(n){var h=Math.floor(n/100),m=n%100,ap=h>=12?'pm':'am';h=h%12||12;return h+(m?':'+(m<10?'0':'')+m:'')+ap;}
+  try{
+    var now=new Date(), p=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/London',weekday:'short',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(now);
+    var get=function(t){return (p.find(function(x){return x.type===t})||{}).value;};
+    var d=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(get('weekday'));
+    var t=parseInt(get('hour'),10)*100+parseInt(get('minute'),10);
+    var el=document.getElementById('open-status'), row=document.querySelector('#hours tr[data-d="'+d+'"]');
+    if(row) row.classList.add('today');
+    var today=H[d], msg, open=false;
+    if(today && t>=today[0] && t<today[1]){open=true;msg='Open now until '+fmt(today[1]);}
+    else if(today && t<today[0]){msg='Opens today at '+fmt(today[0]);}
+    else{ var n=d; for(var i=1;i<=7;i++){n=(d+i)%7; if(H[n]){break;}} msg='Closed now · opens '+(i===1?'tomorrow':['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][n])+' '+fmt(H[n][0]); }
+    el.innerHTML='<span class="dot"></span>'+msg; el.className=open?'open':'';
+    document.getElementById('yr').textContent=now.getFullYear();
+  }catch(e){}
+})();
+</script>
+</body>
+</html>
