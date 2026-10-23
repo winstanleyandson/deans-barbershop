@@ -79,7 +79,7 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rg
 .hero-img{position:absolute;inset:0;background:url(images/hero-m.jpg) center/cover no-repeat}
 .hero-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,42,32,.55) 0%,rgba(11,42,32,.78) 55%,var(--green-900) 100%)}
 .hero .wrap{position:relative;padding-block:72px 56px;display:grid;gap:22px}
-.crest{width:96px;height:96px}
+.crest{width:230px;height:auto;margin-left:-20px}
 .hero h1{font-size:clamp(2.6rem,10vw,5.2rem);font-weight:500;color:var(--white);letter-spacing:.01em}
 .hero h1 em{font-style:italic;color:var(--gold);font-weight:500}
 .lede{font-size:1.1rem;max-width:34ch;color:rgba(245,240,227,.9)}
@@ -203,7 +203,13 @@ footer .fine{font-size:.75rem;color:rgba(245,240,227,.5)}
 <header>
   <div class="wrap nav">
     <a class="brand" href="#top" aria-label="Dean's Barbershop home">
-      <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="none" stroke="#C9A961" stroke-width="1.5"/><circle cx="24" cy="24" r="18" fill="none" stroke="#C9A961" stroke-width=".8"/><text x="24" y="31" text-anchor="middle" font-family="Cinzel,Georgia,serif" font-size="20" font-weight="600" fill="#C9A961">D</text></svg>
+      <svg viewBox="0 0 48 48" aria-hidden="true">
+<rect x="2" y="2" width="44" height="44" fill="none" stroke="#C9A961" stroke-width="1.6"/>
+<rect x="6" y="6" width="36" height="36" fill="none" stroke="#C9A961" stroke-width=".7"/>
+<text x="24" y="30" text-anchor="middle" font-family="Cinzel,Georgia,serif" font-size="22" font-weight="700" fill="#F5F0E3">D</text>
+<path d="M12 36 H20 M28 36 H36" stroke="#C9A961" stroke-width=".9"/>
+<rect x="22" y="34" width="4" height="4" transform="rotate(45 24 36)" fill="#C9A961"/>
+</svg>
       <b>Dean's Barbershop<small>Park Road · Est. 2008</small></b>
     </a>
     <nav class="menu" aria-label="Page sections">
@@ -218,15 +224,16 @@ footer .fine{font-size:.75rem;color:rgba(245,240,227,.5)}
 <section class="hero" aria-labelledby="h1">
   <div class="hero-img" role="img" aria-label="Inside Dean's Barbershop on Park Road: the chair, the mirror and the red sofa"></div>
   <div class="wrap">
-    <svg class="crest" viewBox="0 0 96 96" aria-hidden="true">
-      <circle cx="48" cy="48" r="45" fill="none" stroke="#C9A961" stroke-width="1.5"/>
-      <circle cx="48" cy="48" r="39" fill="none" stroke="#C9A961" stroke-width=".8"/>
-      <path d="M30 62 L66 34 M30 34 L66 62" stroke="#C9A961" stroke-width="1.6" stroke-linecap="round"/>
-      <circle cx="30" cy="34" r="4" fill="none" stroke="#C9A961" stroke-width="1.4"/>
-      <circle cx="30" cy="62" r="4" fill="none" stroke="#C9A961" stroke-width="1.4"/>
-      <text x="48" y="22" text-anchor="middle" font-family="Cinzel,Georgia,serif" font-size="7" letter-spacing="2" fill="#C9A961">EST</text>
-      <text x="48" y="82" text-anchor="middle" font-family="Cinzel,Georgia,serif" font-size="7" letter-spacing="2" fill="#C9A961">2008</text>
-    </svg>
+    <svg class="crest" viewBox="0 0 300 200" aria-hidden="true">
+<rect x="30" y="22" width="240" height="156" fill="none" stroke="#C9A961" stroke-width="2"/>
+<rect x="38" y="30" width="224" height="140" fill="none" stroke="#C9A961" stroke-width=".8"/>
+<text x="150" y="80" text-anchor="middle" font-family="Cinzel,Georgia,serif" font-size="36" font-weight="700" letter-spacing="4" fill="#F5F0E3">DEAN'S</text>
+<path d="M58 94 H138 M162 94 H242" stroke="#C9A961" stroke-width="1"/>
+<rect x="146" y="90" width="8" height="8" transform="rotate(45 150 94)" fill="#C9A961"/>
+<text x="150" y="120" text-anchor="middle" font-family="Cinzel,Georgia,serif" font-size="14" font-weight="500" letter-spacing="7" fill="#C9A961">BARBERSHOP</text>
+<text x="150" y="142" text-anchor="middle" font-family="Jost,Helvetica,Arial,sans-serif" font-size="9" letter-spacing="4" fill="#F5F0E3">PARK ROAD · LIVERPOOL L8</text>
+<text x="150" y="160" text-anchor="middle" font-family="Cinzel,Georgia,serif" font-size="8" letter-spacing="4" fill="#C9A961">EST · 2008</text>
+</svg>
     <p class="eyebrow">Gentlemen's barber · Dingle, Liverpool L8</p>
     <h1 id="h1">A proper cut, <em>done properly.</em></h1>
     <p class="lede">Classic cuts, sharp skin fades, tidy beards and hot-towel cut-throat shaves on Park Road since 2008.</p>
@@ -368,7 +375,13 @@ footer .fine{font-size:.75rem;color:rgba(245,240,227,.5)}
 
 <footer>
   <div class="wrap">
-    <a class="brand" href="#top"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="none" stroke="#C9A961" stroke-width="1.5"/><text x="24" y="31" text-anchor="middle" font-family="Cinzel,Georgia,serif" font-size="20" font-weight="600" fill="#C9A961">D</text></svg><b>Dean's Barbershop<small>296 Park Road, Liverpool L8 4UE</small></b></a>
+    <a class="brand" href="#top"><svg viewBox="0 0 48 48" aria-hidden="true">
+<rect x="2" y="2" width="44" height="44" fill="none" stroke="#C9A961" stroke-width="1.6"/>
+<rect x="6" y="6" width="36" height="36" fill="none" stroke="#C9A961" stroke-width=".7"/>
+<text x="24" y="30" text-anchor="middle" font-family="Cinzel,Georgia,serif" font-size="22" font-weight="700" fill="#F5F0E3">D</text>
+<path d="M12 36 H20 M28 36 H36" stroke="#C9A961" stroke-width=".9"/>
+<rect x="22" y="34" width="4" height="4" transform="rotate(45 24 36)" fill="#C9A961"/>
+</svg><b>Dean's Barbershop<small>296 Park Road, Liverpool L8 4UE</small></b></a>
     <div class="links">
       <a href="tel:+441517278291">0151 727 8291</a>
       <a href="https://www.instagram.com/deansbarbers" target="_blank" rel="noopener">Instagram</a>
